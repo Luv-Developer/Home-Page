@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+      <meta name="author" content="Rajkishor Kushwaha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/ijvd2TK.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+body {
+    background: #1f1f1f;
+}
+
+/* Flexbox container for aligning items */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#google-logo {
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    width: 450px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    box-shadow: 5px 5px;
+    margin-bottom: 20px;
+
+}
+
+.search-button {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 5px 5px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.search-button:hover {
+    background-color: #090020;
+    box-shadow: 0 4px 8px 0 rgba(226, 226, 226, 0.2), 0 6px 20px 0 rgba(226, 226, 226, 0.2);
+
+}
+
+form {
+    margin-bottom: 40px;
+}
+
+
+.web-icon {
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding: 5px;
+    margin: 3px;
+    transition: 0.2s;
+}
+
+.web-icon:hover {
+    box-shadow: 0 4px 8px 0 rgba(226, 226, 226, 0.2), 0 6px 20px 0 rgba(226, 226, 226, 0.2);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 400px;
+    height: auto;
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    padding: 0px;
+    margin-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* Adjusted to margin-left */
+}
+
+#credit{
+    font-size: 11px;
+    color: gray;
+}
+
+#codepen-credit{
+    text-decoration: underline;
+}
+</style>
+
+<body>
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <!-- Flex Container -->
+        <div class="flex-container">
+            <!-- Main Content -->
+            <div class="flex flex-col items-center justify-center">
+                <img id="google-logo" width="300px" src="https://i.imgur.com/czvj9ll.png" alt="">
+                <!-- Google Search Bar -->
+                <form action="https://www.google.com/search" method="GET" target="_blank">
+                    <input type="text" name="q" class="search-bar" placeholder="Search Google">
+                    <button type="submit" class="search-button">Search</button>
+                </form>
+
+                <!-- Service Buttons -->
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a title="Youtube" href="https://www.youtube.com" target="_blank"><img width="60px" class="web-icon"
+                            src="https://i.imgur.com/7rnWE7X.png" alt=""></a>
+                  
+                    <a title="Spotify" href="https://open.spotify.com" target="_blank"><img width="60px" class="web-icon"
+                            src="https://i.imgur.com/C2LiKpW.png" alt=""></a>
+                  
+                    <a title="Instagram" href="https://instagram.com" target="_blank"><img width="60px" class="web-icon"
+                            src="https://i.imgur.com/EbDrYQ2.png" alt=""></a>
+                  
+                    <a title="Google" href="https://google.com" target="_blank"><img width="60px" class="web-icon"
+                            src="https://i.imgur.com/uP5Su7c.png" alt=""></a>
+                  
+                    <a title="G-mail" href="https://mail.google.com" target="_blank"><img width="60px" class="web-icon"
+                            src="https://i.imgur.com/ndVIp3y.png" alt=""></a>
+                  
+                    <a title="Chat-GPT" href="https://chat.openai.com" target="_blank"><img width="60px" class="web-icon"
+                            src="https://i.imgur.com/uA9LOmZ.png" alt=""></a>
+                  
+                    <a title="Amazon" href="https://amazon.com" target="_blank"><img width="60px" class="web-icon"
+                            src="https://i.imgur.com/bFRFY84.png" alt=""></a>
+                    <!-- Repeat similar markup for other services -->
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/1dpKR9xGrVPqN4l78ymrKD?utm_source=generator&theme=0"
+                    width="100%" height="552" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
